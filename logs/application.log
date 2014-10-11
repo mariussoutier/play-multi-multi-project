@@ -1,0 +1,25 @@
+2014-10-11 19:00:37,924 - [INFO] - from play in pool-24-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-10-11 19:00:39,242 - [ERROR] - from application in New I/O worker #1 
+
+
+! Internal server error, for (GET) [/] ->
+
+java.util.NoSuchElementException: None.get
+	at scala.None$.get(Option.scala:313) ~[scala-library.jar:na]
+	at scala.None$.get(Option.scala:311) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:89) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.10-2.3.5.jar:2.3.5]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.10-2.3.5.jar:2.3.5]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2014-10-11 19:00:39,303 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
