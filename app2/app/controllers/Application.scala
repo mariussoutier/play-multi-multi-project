@@ -1,9 +1,12 @@
 package controllers
 
+import javax.inject._
+
 import com.mariussoutier.example.model.User
 import play.api.mvc._
 
-object Application extends Controller {
+@Singleton
+class Application extends Controller {
 
   def index = Action {
     val user = User("Admin-User-2")

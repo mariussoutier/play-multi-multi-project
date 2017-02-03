@@ -2,7 +2,7 @@ name := "play-multi-project-root"
 
 organization in ThisBuild := "com.mariussoutier.example"
 
-scalaVersion in ThisBuild := "2.10.4"
+scalaVersion in ThisBuild := "2.11.8"
 
 lazy val root = project.in(file("."))
   .dependsOn(app1, app2)

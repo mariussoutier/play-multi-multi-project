@@ -1,4 +1,5 @@
 GET     /index                      controllers.admin2.SubApplication.index()
 
 # Must be defined here also
-GET     /assets/*file               controllers.admin2.Assets.versioned(path="/public", file: Asset)
+GET     /assets/*file               controllers.admin2.Assets.versioned(path="/public", file)
+#GET     /assets/*file               controllers.Assets.versioned(path="/public", file)
